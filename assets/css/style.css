@@ -530,6 +530,10 @@ a {
     display: block;
 }
 
+.install__img:hover {
+    transform: translateY(-10px);
+}
+
 .section__content {
     max-width: 586px;
 }
@@ -597,11 +601,19 @@ a {
 
 .new-item:hover {
     box-shadow: 0px 18px 50px rgba(0, 0, 0, 0.05);
-    transform: translateY(-16px);
+}
+
+.new-item:hover .new-item__img {
+    transform: scale(1.1);
 }
 
 .new-item:hover .new-item__body {
     border-color: #fff;
+}
+
+.new-item__thumb {
+    height: 172px;
+    overflow: hidden;
 }
 
 .new-item__img {
@@ -610,6 +622,7 @@ a {
     height: 172px;
     object-fit: cover;
     display: block;
+    transition: 0.25s;
 }
 
 .new-item__body {
@@ -644,3 +657,53 @@ a {
     line-height: 1.6;
     color: #10375c;
 }
+
+.new-item__more:hover {
+    color: #2e80ce;
+}
+
+/* Apointment */
+
+.appointment {
+    margin: 85px 0 170px;
+}
+
+.appointment__inner {
+    background: #f7fbff;
+    padding: 100px 70px;
+    text-align: center;
+}
+.appointment__heading{
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.appointment__heading::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: inline-block;
+    content: "";
+    width: 136px;
+    height: 2px;
+    background-color: #2e80ce;
+}
+
+.appointment__desc {
+    max-width: 617px;
+    margin: 18px auto 38px;
+    font-size: 1.6rem;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
