@@ -26,6 +26,14 @@ a {
     text-decoration: none;
 }
 
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
 .btn {
     --height: 60px;
     display: inline-block;
@@ -137,6 +145,7 @@ a {
     display: block;
     font-size: 1.8em;
     font-weight: 400;
+    font-family: "Sora", sans-serif;
     color: #fff;
     text-align: right;
 }
@@ -673,7 +682,7 @@ a {
     padding: 100px 70px;
     text-align: center;
 }
-.appointment__heading{
+.appointment__heading {
     position: relative;
     padding-bottom: 20px;
 }
@@ -697,13 +706,121 @@ a {
     border-radius: 4px;
 }
 
+/* Footer */
+.footer {
+    padding-top: 100px;
+    max-height: 533px;
+    background: #10375c;
+    font-family: "Open Sans", sans-serif;
+}
 
+.footer__row {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+    column-gap: 78px;
+}
 
+.footer__desc {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #a9b3bb;
+}
 
+.footer__heading {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #ffffff;
+}
 
+.footer__list {
+    margin-bottom: 28px;
+}
 
+.footer__link {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #a9b3bb;
+    white-space: nowrap;
+}
 
+.footer__link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
 
+.footer__item {
+    margin-bottom: 10px;
+}
 
+.footer__social {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 20px;
+}
 
+.footer__social-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #2e80ce;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: 0.25s;
+}
 
+.footer__social-btn:hover {
+    background-color: #2e80ce;
+    color: #fff;
+}
+
+.footer-form {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer-form__input {
+    width: 211px;
+    height: 46px;
+    outline: none;
+    border: 1px solid #406181;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.footer-form__input::placeholder {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #9ca8b1;
+}
+
+.footer-form__submit {
+    --height: 46px;
+    border-radius: 4px;
+    min-width: 108px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.footer__copyright {
+    border-top: 1px solid #406181;
+}
+
+.footer__copyright-text {
+    padding: 28px 0 42px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: #aab3ba;
+}
