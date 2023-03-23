@@ -15,10 +15,12 @@ body {
     font-family: "Sora", sans-serif;
 }
 
-/* Common */
+/* ======================================Common ===========================================*/
 .container {
     width: 1170px;
+    /* De khi co trinh duyet lai thi khong bi che mat */
     max-width: calc(100% - 48px);
+    /* Can giua phan noi dung  */
     margin: 0 auto;
 }
 
@@ -32,22 +34,25 @@ select,
 button {
     font-family: inherit;
     font-size: inherit;
+    /* Thuong huong font chu trong trang */
 }
 
 .btn {
     --height: 60px;
     display: inline-block;
+    /* Dat min-width de khi neu them chu thi no se khong bi xuong dong */
     min-width: 205px;
     text-align: center;
     color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
     padding: 0 20px;
     height: var(--height);
+    /* Dat chieu cao dong bang chieu cao cua cai nut de chu nam ơ giua chieu cao */
     line-height: var(--height);
     background: #2e80ce;
     border-radius: 999px;
     border: 1px solid #2e80ce;
-    font-size: 1.6rem;
-    font-weight: 400;
 }
 
 .btn:hover {
@@ -101,16 +106,18 @@ button {
     rotate: 180deg;
 }
 
-/* Header */
+/* ==================================Header=================================================== */
 .header {
-    padding-top: 30px;
+    /* padding-top: 30px; */
     min-height: 100vh;
     background: var(--header-bg);
 }
 
 .logo {
+    /* can chu va logo len tren va no thanh inline de khong hien thi het mot dong va chi chiem khong gian mot vung nhat dinh */
     display: inline-flex;
     position: relative;
+    /* dat kich thuoc trong chu la 1rem = 10px de sau nay thay doi font chu thi chi thay doi font chu trong logo */
     font-size: 1rem;
 }
 
@@ -118,6 +125,7 @@ button {
 .logo__circle::after {
     content: "";
     display: inline-block;
+    /* Span the inline nen dat chuyen ve inline-block de dat dc width height */
     border-radius: 50%;
 }
 
@@ -138,15 +146,19 @@ button {
 
 .logo__text {
     margin-left: 0.6em;
+    /* Dat chieu cao cho toan bo chu */
     line-height: 1.4em;
 }
 
 .logo__branch {
+    /* tao thanh 2 hang chua 2 chu */
     display: block;
     font-size: 1.8em;
     font-weight: 400;
+    /* tao font chu cho logo dung cho o tren dau trang va cuoi trang vi cuoi trang co su dunbg font chu khac */
     font-family: "Sora", sans-serif;
     color: #fff;
+    /* chuyen 2 chu dich sang het ben phai  */
     text-align: right;
 }
 
@@ -156,19 +168,20 @@ button {
     color: #fff;
 }
 
-/* Header top */
+/* ==============================Header top ====================================*/
 .header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+/* ========================Navigation========================= */
 .navbar__list {
     display: flex;
 }
 
 .header-action__login,
 .navbar__link {
+    /*  pading de tang vung bam. vi the inline nên khi padding len trên se bị dinh len hang phia tren hay khong co phan nao nen se khong sao */
     padding: 4px 21px;
     font-weight: 300;
     font-size: 1.6rem;
@@ -181,11 +194,13 @@ button {
     text-shadow: 1px 0 0 currentColor;
 }
 
+/* tao cai icon mau trang truoc home */
 .navbar__link--active::before {
     position: relative;
     left: -8px;
     top: -2px;
     content: "";
+    /* Before:: co thuoc tinh la the inline nen muon dat width height thi phai thanh inline-block */
     display: inline-block;
     width: 6px;
     height: 6px;
@@ -193,19 +208,21 @@ button {
     background-color: #fff;
 }
 
+/* Lam phan nut tren header-top */
 .header-action {
     display: flex;
-    /* loai bo khoang trang du vi the a va btn la the inline nen co dau cach */
+    /* can chinh 2 nut ngang hang nhau và loai bo khoang trang dư vì the a va button la the inline nen co dau cach */
     align-items: center;
 }
 
 .header-action__sign-up {
     --height: 44px;
     min-width: 104px;
+    /* Vi ơ trên  phan login đã padding 21px nên nut con cách 7px */
     margin-left: 7px;
 }
 
-/* Hero */
+/* ======================================Hero========================================== */
 .hero {
     display: flex;
     align-items: center;
@@ -255,6 +272,7 @@ button {
 .hero__image {
     display: flex;
     align-items: center;
+    /* Dua anh ve cuoi hang */
     justify-content: flex-end;
 }
 
@@ -562,7 +580,7 @@ button {
     margin-top: 38px;
 }
 
-/* News */
+/*========================================================== News =========================================*/
 .new {
     margin-top: 85px;
     padding: 85px 0;
@@ -571,7 +589,7 @@ button {
 .new__inner {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .new__content {
     flex-shrink: 0;
@@ -601,6 +619,7 @@ button {
     display: flex;
     max-width: 570px;
     column-gap: 30px;
+    margin-left: auto;
 }
 
 .new-item {
@@ -631,6 +650,7 @@ button {
     height: 172px;
     object-fit: cover;
     display: block;
+    /* bo khaong cach o duoi the img vif le the inline nen co khoang cach */
     transition: 0.25s;
 }
 
@@ -710,7 +730,7 @@ button {
 .footer {
     padding-top: 100px;
     max-height: 533px;
-    background: #10375c;
+    background: var(--header-bg);
     font-family: "Open Sans", sans-serif;
 }
 
