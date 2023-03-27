@@ -76,12 +76,13 @@ button {
     color: #575f66;
 }
 
-.controll {
+.control {
     display: flex;
     column-gap: 18px;
 }
 
-.controll__btn {
+.control__btn {
+    /* icon vao giữa nút */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,19 +91,20 @@ button {
     border-radius: 50%;
     border: 1px solid #575f66;
     color: #575f66;
+    /* Button co outline mac dinh */
     outline: none;
     background-color: #fff;
     transition: 0.25s;
 }
 
-.controll__btn:hover:hover {
+.control__btn:hover {
     border-color: #2e80ce;
     background-color: #2e80ce;
     color: #ffffff;
     cursor: pointer;
 }
 
-.controll-next-icon {
+.control-next-icon {
     rotate: 180deg;
 }
 
@@ -236,7 +238,7 @@ button {
 }
 
 .hero__media {
-    flex-grow: 1;
+    flex: 1;
     /* Chiem phan con lai */
 }
 
@@ -294,7 +296,8 @@ button {
 
 /* Service */
 .service {
-    padding: 170px 0;
+    padding: 85px 0;
+    margin-top: 85px;
 }
 
 .service__desc,
@@ -333,17 +336,16 @@ button {
     background: #ffffff;
     border-radius: 10px;
     padding: 22px;
-    transition: 0.25s;
+    transition: 0.9s;
 }
 
 .service-item:hover {
     position: relative;
-    /* dinh vi len tren cac o item khong dc  hover */
+    /* dịnh vi len tren cac o item khong dc  hover */
     box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.05);
 }
 
-.service-item:first-child .service-item__icon,
-.setvice-item:hover .service-item__icon {
+.service-item:hover .service-item__icon {
     background: #2e80ce;
     color: #fff;
 }
@@ -353,6 +355,7 @@ button {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    /* Giu dung tỉ lệ  */
     width: 60px;
     height: 60px;
     background: #eff6fd;
@@ -382,6 +385,7 @@ button {
 
 /* Work*/
 .work {
+    margin-top: 85px;
     padding: 100px 0;
     background: #f7fbff;
 }
@@ -530,14 +534,15 @@ button {
     color: #575f66;
 }
 
-.member__controll {
+.member__control {
     justify-content: center;
     margin-top: 38px;
 }
 
 /* Install */
 .install {
-    margin-top: 180px;
+    margin-top: 85px;
+    padding: 85px 0;
 }
 
 .install__inner {
@@ -589,7 +594,7 @@ button {
 .new__inner {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
 }
 .new__content {
     flex-shrink: 0;
@@ -611,7 +616,7 @@ button {
     color: #10375c;
 }
 
-.new__controll {
+.new__control {
     margin-top: 28px;
 }
 
@@ -687,7 +692,7 @@ button {
     color: #10375c;
 }
 
-.new-item__more:hover {
+.news-item__more:hover {
     color: #2e80ce;
 }
 
@@ -779,7 +784,7 @@ button {
 .footer__social {
     display: flex;
     column-gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
 
 .footer__social-btn {
@@ -788,9 +793,9 @@ button {
     border-radius: 50%;
     background-color: #fff;
     color: #2e80ce;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
     transition: 0.25s;
 }
 
